@@ -34,3 +34,14 @@ body.mainStyle { /** GENERIC STYLING OF TEXT maaroon #61122f**/
     text-decoration: none;
     color: #fff;
 }
+
+#unity-container.unity-desktop { padding-top: 10px;}
+#unity-container.unity-mobile { padding-top: 10px; }
+
+.gameTitle{
+    font-size: 125%;
+}
+
+.gameCompatibility{
+    font-size: 95%;
+}

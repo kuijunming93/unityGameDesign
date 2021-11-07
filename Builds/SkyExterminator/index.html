@@ -36,23 +36,41 @@
       </div><!--NAVBAR CONTAINER CLOSURE-->
     </nav><!--NAV BAR SECTION-->
     
-      <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasGameSelect" aria-labelledby="offcanvasGameSelectLabel">
-        <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasGameSelectLabel"><i class="fa fa-gamepad" aria-hidden="true"></i> Game List</h5>
-          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body">
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasGameSelect" aria-labelledby="offcanvasGameSelectLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasGameSelectLabel"><i class="fa fa-gamepad" aria-hidden="true"></i> Game List</h5>
+        <button type="button" class="btn-close btn-close-white text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="container">
           <div>
-            <a href="https://kuijunming93.github.io/unityGameDesign/Builds/SkyExterminator/index.html"><img src="./img/SkyExterminatorWindow.jpg" class="img-fluid">Sky Exterminator</a><hr class="visible" style="color: white;">
+            <a href="https://kuijunming93.github.io/unityGameDesign/Builds/SkyExterminator/index.html"><img src="./img/SkyExterminatorWindow.jpg" class="img-fluid"></a>
+            <div class="d-flex justify-content-center gameTitle">Sky Exterminator</div>
           </div>
-          <div class="container">
-            <a href="https://kuijunming93.github.io/unityGameDesign/Builds/GrandEscape/index.html"><img src="./img/GrandEscapeWindow.jpg" class="img-fluid">Grand Escape</a><hr class="visible" style="color: white;">
-          </div>
-          <div class="container">
-            <a href="https://kuijunming93.github.io/unityGameDesign/Builds/GalaxyDefender/index.html"><img src="./img/GalaxyDefenderWindow.jpg" class="img-fluid">Galaxy Defender</a><hr class="visible" style="color: white;">
-          </div>
+          <div class="d-flex justify-content-center gameCompatibility">
+             <i class="fa fa-desktop fa-fw" aria-hidden="true"></i><i class="fa fa-tablet fa-fw" aria-hidden="true"></i>
+          </div><hr class="visible" style="color: white;">
         </div>
-      </div><!--OFF CANVAS SETUP-->
+        <div class="container">
+          <div>
+            <a href="https://kuijunming93.github.io/unityGameDesign/Builds/GrandEscape/index.html"><img src="./img/GrandEscapeWindow.jpg" class="img-fluid"></a>
+            <div class="d-flex justify-content-center gameTitle">Grand Escape</div>
+          </div>
+          <div class="d-flex justify-content-center gameCompatibility">
+            <i class="fa fa-desktop fa-fw" aria-hidden="true"></i><i class="fa fa-tablet fa-fw" aria-hidden="true"></i>
+          </div><hr class="visible" style="color: white;">
+        </div>
+        <div class="container">
+          <div>
+            <a href="https://kuijunming93.github.io/unityGameDesign/Builds/GalaxyDefender/index.html"><img src="./img/GalaxyDefenderWindow.jpg" class="img-fluid"></a>
+            <div class="d-flex justify-content-center gameTitle">Galaxy Defender</div>
+          </div>
+          <div class="d-flex justify-content-center gameCompatibility">
+            <i class="fa fa-desktop fa-fw" aria-hidden="true"></i>
+          </div><hr class="visible" style="color: white;">
+        </div>
+      </div>
+    </div><!--OFF CANVAS SETUP-->
     <!--MODS ENDS HERE-->
 
     <div id="unity-container" class="unity-desktop">
@@ -69,6 +87,7 @@
         <div id="unity-build-title">Sky Exterminator</div>
       </div>
     </div>
+
     <script>
       var buildUrl = "Build";
       var loaderUrl = buildUrl + "/WebGL.loader.js";
