@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | Galaxy Defender</title>
+    <title>Unity WebGL Player | Galaxy Defender 2.0</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
     <!-- MODS STARTS HERE -->
@@ -15,6 +15,7 @@
     <!-- MODS ENDS HERE -->
   </head>
   <body class="mainStyle">
+    <!--MODS STARTS HERE-->
     <nav class="navbar navbar-expand navbar-dark bg-dark">
       <div class="container-fluid">
           <div class="navbar-brand">
@@ -89,6 +90,7 @@
       </div>
     </div><!--OFF CANVAS SETUP-->
     <!--MODS ENDS HERE-->
+
     <div id="unity-container" class="unity-desktop">
       <canvas id="unity-canvas"></canvas>
       <div id="unity-loading-bar">
@@ -100,20 +102,20 @@
       <div id="unity-footer">
         <div id="unity-webgl-logo"></div>
         <div id="unity-fullscreen-button"></div>
-        <div id="unity-build-title">Galaxy Defender</div>
+        <div id="unity-build-title">Galaxy Defender 2.0</div>
       </div>
     </div>
     <script>
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/WebGL.loader.js";
+      var loaderUrl = buildUrl + "/V1.01.loader.js";
       var config = {
-        dataUrl: buildUrl + "/WebGL.data.unityweb",
-        frameworkUrl: buildUrl + "/WebGL.framework.js.unityweb",
-        codeUrl: buildUrl + "/WebGL.wasm.unityweb",
+        dataUrl: buildUrl + "/V1.01.data.unityweb",
+        frameworkUrl: buildUrl + "/V1.01.framework.js.unityweb",
+        codeUrl: buildUrl + "/V1.01.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "KJM Productions",
-        productName: "Galaxy Defender",
-        productVersion: "V2.0",
+        productName: "Galaxy Defender 2.0",
+        productVersion: "V1.0",
       };
 
       var container = document.querySelector("#unity-container");
@@ -147,7 +149,6 @@
       };
       document.body.appendChild(script);
     </script>
-    
     <!--MODS STARTS HERE-->
     <!-- SRC JS FILES FOR BS5/POOPER -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
